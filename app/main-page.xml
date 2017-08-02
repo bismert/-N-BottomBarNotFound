@@ -1,0 +1,24 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+    navigatingTo="navigatingTo"
+    xmlns:btn="nativescript-bottombar"
+    class="page">
+    <Page.actionBar>
+        <ActionBar title="My App" icon="" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+    <StackLayout class="p-20">
+        <Label text="Tap the button" class="h1 text-center"/>
+        <Button text="TAP" tap="{{ onTap }}" class="btn btn-primary btn-active"/>
+        <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+    </StackLayout>
+
+<btn:BottomBar tabSelected="tabSelected" titleState="{{ titleStateValue }}" hide="{{ hidden}}" >
+  <btn:BottomBar.items>
+    <btn:BottomBarItem title="Cake" icon="logo" color="#4CAF50" />
+    <btn:BottomBarItem title="Favorites" icon="logo" color="#2196F3" />
+    <btn:BottomBarItem title="Settings" icon="logo" color="#FF4081" />
+    <btn:BottomBarItem title="Settings" icon="logo" color="#FF4081" />
+  </btn:BottomBar.items>
+</btn:BottomBar>
+
+</Page>
